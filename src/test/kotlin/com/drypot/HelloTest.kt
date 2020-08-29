@@ -13,7 +13,17 @@ class HelloTest {
     @Test
     internal fun printName() {
         var name: String = "Snowman"
+        val name2: String = "Snowman 2"
         println(name)
+        println(name2)
     }
 
+    @Test
+    internal fun printNull() {
+        var name: String? = "Snowman"
+        println(name);
+        name = null;
+        println(name);
+
+    }
 }
